@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<param name="seller" attribute="Seller" status="generate">
+<element1 name="idseller" attribute="Seller.idseller" status="generate" >
+	<value>-2</value>
+	<value>-0888</value>
+	<value>-4</value>
+	<value>15</value>
+	<value>9</value>
+	<value>-2147483647</value>
+	<value>-2147483648</value>
+	<value>2147483646</value>
+	<value>2147483647</value>
+	<value>0</value>
+</element1>
+<element1 name="loginName" attribute="Seller.loginName" status="generate" >
+	<value>7HX</value>
+	<value>Z__d_7t4q__O_0</value>
+	<value>l1_1F_J_S_</value>
+	<value>F_QD2</value>
+	<value>TDkn34_487p_hV_</value>
+</element1>
+<element1 name="passWord" attribute="Seller.passWord" status="generate" >
+	<value>KugM975F4C___dG1_7</value>
+	<value>l8P__xx93_c_IeU</value>
+	<value>y8_6hO7d_i2n_</value>
+	<value>P_____</value>
+	<value>XLGTKs4_In5J</value>
+</element1>
+<element1 name="name" attribute="Seller.name" status="generate" >
+	<value>GS_</value>
+	<value>_H446a</value>
+	<value>w_S_R_8P_</value>
+	<value>E3R25RQ_6</value>
+	<value>_WO77k5Hy1a4</value>
+</element1>
+<element1 name="mobilePhone" attribute="Seller.mobilePhone" status="generate" >
+	<value>18807820150</value>
+	<value>13677675161</value>
+	<value>17410274284</value>
+	<value>14537980154</value>
+	<value>18942157612</value>
+</element1>
+<element1 name="telephone" attribute="Seller.telephone" status="generate" >
+	<value>027-4748613-9</value>
+	<value>088-38282608-2</value>
+	<value>86228685-87</value>
+	<value>761606430571360</value>
+	<value>43683225-2</value>
+</element1>
+<element1 name="email" attribute="Seller.email" status="generate" >
+	<value>3a7lU5-w7rPh333@L-__-.gi5_I2i53</value>
+	<value>F-@8D_R__--QvsyTecK7J_bGHJ5-IjOW_t__y_P5_56_.3-</value>
+	<value>6Y-9TE2@_E7.-5u</value>
+	<value>l@--2_v5581U_G_V92_K_s38_q57.-xs4.c_Y</value>
+	<value>q@8M.G-n-bm._f-O_.34l-__-f.22-3--._f95yM--E-xz_kN.3v-G20-_--1X-S-X_nkc.__5x-_-5--9-6-N.d-</value>
+</element1>
+<element1 name="qq" attribute="Seller.qq" status="generate" >
+	<value>62670</value>
+	<value>5576309413</value>
+	<value>76061</value>
+	<value>58521</value>
+	<value>22640</value>
+</element1>
+<element1 name="forbid" attribute="Seller.forbid" status="generate" >
+	<value>kHM__2_5</value>
+	<value>_Xs</value>
+	<value>K0_S</value>
+	<value>Z_C3357be__34_B4R_G__y9_P</value>
+	<value>4157</value>
+</element1>
+<element1 name="company" attribute="Seller.company" status="generate" >
+	<value>K__8_OX1U</value>
+	<value>4</value>
+	<value>7S4_yA_E4A</value>
+	<value>2f_</value>
+	<value>U_0_33_</value>
+</element1>
+<element1 name="businessLicense" attribute="Seller.businessLicense" status="generate" >
+	<value>GM3n4_d27H4</value>
+	<value>j_6X2b</value>
+	<value>_539j_</value>
+	<value>MNZ6__Z___F_atC</value>
+	<value>YCX46LOc_B</value>
+</element1>
+<element1 name="productType" attribute="Seller.productType" status="generate" >
+	<value>_y_</value>
+	<value>_8_</value>
+	<value>_04_I__5OKGB1_S___9xeBD58B_E28</value>
+	<value>_2ev_y</value>
+	<value>_Tdg_5__J____I9t</value>
+</element1>
+<element1 name="pathType" attribute="Seller.pathType" status="generate" >
+	<value>3J</value>
+	<value>_10</value>
+	<value>_</value>
+	<value>8__</value>
+	<value>tH_</value>
+</element1>
+<element1 name="products" attribute="Seller.products" status="generate" >
+</element1>
+<element1 name="personincharges" attribute="Seller.personincharges" status="generate" >
+</element1>
+<element1 name="receivermapnotices" attribute="Seller.receivermapnotices" status="generate" >
+</element1>
+<element1 name="traffics" attribute="Seller.traffics" status="generate" >
+</element1>
+<element1 name="materialinformations" attribute="Seller.materialinformations" status="generate" >
+</element1>
+<element1 name="orders" attribute="Seller.orders" status="generate" >
+</element1>
+</param>

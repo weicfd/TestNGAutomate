@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script resourcesID="IAdministerSellerManageService" sequence="" completed="false" >
+	<step operation="add" path="addSeller" name="Add_Seller" >
+		<param name="seller" attribute="Seller" location="false">
+			<element1 name="idseller" attribute="Seller.idseller" location="false" >
+			</element1>
+			<element1 name="loginName" attribute="Seller.loginName" location="false" >
+			</element1>
+			<element1 name="passWord" attribute="Seller.passWord" location="false" >
+			</element1>
+			<element1 name="name" attribute="Seller.name" location="false" >
+			</element1>
+			<element1 name="mobilePhone" attribute="Seller.mobilePhone" location="false" >
+			</element1>
+			<element1 name="telephone" attribute="Seller.telephone" location="false" >
+			</element1>
+			<element1 name="email" attribute="Seller.email" location="false" >
+			</element1>
+			<element1 name="qq" attribute="Seller.qq" location="false" >
+			</element1>
+			<element1 name="forbid" attribute="Seller.forbid" location="false" >
+			</element1>
+			<element1 name="company" attribute="Seller.company" location="false" >
+			</element1>
+			<element1 name="businessLicense" attribute="Seller.businessLicense" location="false" >
+			</element1>
+			<element1 name="productType" attribute="Seller.productType" location="false" >
+			</element1>
+			<element1 name="pathType" attribute="Seller.pathType" location="false" >
+			</element1>
+			<element1 name="products" attribute="Seller.products" location="false" >
+			</element1>
+			<element1 name="personincharges" attribute="Seller.personincharges" location="false" >
+			</element1>
+			<element1 name="receivermapnotices" attribute="Seller.receivermapnotices" location="false" >
+			</element1>
+			<element1 name="traffics" attribute="Seller.traffics" location="false" >
+			</element1>
+			<element1 name="materialinformations" attribute="Seller.materialinformations" location="false" >
+			</element1>
+			<element1 name="orders" attribute="Seller.orders" location="false" >
+			</element1>
+		</param>
+		<response type="boolean" >
+			<param name="isAddSuccess" attribute="" >
+			</param>
+		</response>
+	</step>
+	<step operation="find" path="findSellerByName" name="Find_Seller_ByName" >
+		<param name="name" attribute="Seller.name" location="Seller.name">
+		</param>
+		<response type="boolean" >
+			<param name="isFindSuccess" attribute="" >
+			</param>
+		</response>
+	</step>
+</script>

@@ -1,0 +1,51 @@
+## create the testng java code, this is a class
+package $!{package_dir}.template;
+
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+import $!{package_dir}.Driver;
+
+public class $!{test_naming} {
+    Driver driver;
+
+
+/**
+* generated from script file: ${script_name}
+*/
+## test naming: service + no
+public $!{test_naming}() {
+    driver = new Driver();
+}
+
+## group naming: suc or fail
+@Test(groups = { "$!{group_naming}"})
+public void getPattern1_Succ() throws IOException{
+     String rootURL = "$!{root_url}";
+#set($last_i = 0)
+
+String pattern = "${pattern}";
+Reporter.log("Test Pattern: " + pattern);
+
+#foreach($methodElement in $methodList)
+String method${velocityCount} = "${methodElement}";
+Reporter.log("Test Method: " + ${methodElement});
+String param${velocityCount} = "$paramList[$foreach.index]";
+Reporter.log("Test parameters: " + (param${velocityCount}.length() == 0 ? "None" : param${velocityCount}));
+
+String response${velocityCount} = driver.httpConnect(rootURL + method${velocityCount} + '/' + param${velocityCount});
+Reporter.log("Test Response: " + response${velocityCount});
+    #set($last_i = $velocityCount)
+#end
+
+String responseText = response${last_i};
+#foreach($targetElement in $targetList)
+    Assert.assertEquals(driver.getJsonValue(responseText, $targetElement), "$oracle[$targetElement]");
+#end
+
+}
+}
