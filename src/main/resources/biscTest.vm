@@ -44,7 +44,7 @@ Reporter.log("Test Response: " + response${velocityCount});
 
 String responseText = response${last_i};
 #foreach($targetElement in $targetList)
-    Assert.assertEquals(driver.getJsonValue(responseText, $targetElement), "$oracle[$targetElement]");
+    Assert.assertEquals(driver.getJsonValue(responseText, "$targetElement"), "$oracle[$targetElement]");
 #end
 
 }

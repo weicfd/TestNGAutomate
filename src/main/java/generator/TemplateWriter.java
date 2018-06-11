@@ -25,7 +25,17 @@ public class TemplateWriter {
     DataFsm dataFsm;
     List<Method> methods;
 
-
+    /**
+     * 模板写入类
+     * @param fileID 输出文件的ID
+     * @param methods Method列表
+     * @param serviceName 服务名
+     * @param caseNo 对应的case编号
+     * @param pat 模式
+     * @param target 预期数据码映射表
+     * @param dataMap 方法参数数据码映射表
+     * @param path 输入的XML文件的路径
+     */
     public TemplateWriter(int fileID, List<Method> methods, String serviceName, int caseNo, String pat, Map<Long, String> target, HashMap<Integer, String> dataMap, String path) {
         this.dataMap = dataMap;
         dataFsm = DataFsm.getDataFsm();
@@ -115,6 +125,11 @@ public class TemplateWriter {
 
     }
 
+    /**
+     * 将Pattern从英文翻译为mType
+     * @param pat
+     * @return
+     */
     private String translatePattern(String pat) {
         StringBuilder builder = new StringBuilder();
         String con = "";
@@ -142,17 +157,17 @@ public class TemplateWriter {
         return builder.toString();
     }
 
-    private String merge(List<String> targets) {
-        StringBuilder builder = new StringBuilder();
-        String con = "";
-        for (String t :
-                targets) {
-            builder.append(con);
-            con = "_"; // @note the connection is underline
-            builder.append(t);
-        }
-        return builder.toString();
-    }
+//    private String merge(List<String> targets) {
+//        StringBuilder builder = new StringBuilder();
+//        String con = "";
+//        for (String t :
+//                targets) {
+//            builder.append(con);
+//            con = "_"; // @note the connection is underline
+//            builder.append(t);
+//        }
+//        return builder.toString();
+//    }
 
     private String getData(Map<Long, String> dataCodeSet, int mType) {
         StringBuilder urlBuilder = new StringBuilder();

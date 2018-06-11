@@ -7,6 +7,12 @@ import java.util.List;
 public class DataCodeConverter {
     final static int mADD = 1, mUPDATE = 2, mDELETE = 3, mFIND = 4, mUNKNOWN = 0;
 
+    /**
+     * 使用哈希函数将数据的信息转化为半数据码
+     * @param mServiceName 服务名
+     * @param attribute 数据的属性（实体名+参数名）
+     * @return 半数据码
+     */
     public static long castAttrToCode(String mServiceName, String attribute) {
 //        System.out.println(attribute);
 //        System.out.println("cast:" + mServiceName + ", " + attribute);
@@ -48,6 +54,11 @@ public class DataCodeConverter {
         return Math.abs(hash % 1000);
     }
 
+    /**
+     * 根据Method列表来判断当前序列可以生成的用例编号（可扩展）
+     * @param methods 操作序列列表
+     * @return 用例标号的数组
+     */
     public static int[] getCases(List<Method> methods) {
         int temp = methods.size() - 2;
         int mType = methods.get(temp).getmType(), m_last_type = -1;

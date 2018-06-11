@@ -18,6 +18,11 @@ public class Driver {
         return getJsonValue(httpConnect(url), resultID);
     }
 
+    /**
+     * 使用HTTP协议将请求发送到被测系统并获取返回报文内容
+     * @param url 需要发送请求的URL
+     * @return 响应报文内容
+     */
     public static String httpConnect(String url) {
         String line = "";
         StringBuilder httpResults = new StringBuilder();
@@ -59,12 +64,11 @@ public class Driver {
 
     /**
      * 解析Json内容
-     *
-     * @version 1.0 2015/3/23
+     * @param JsonString 需要解析的JSON内容
+     * @param JsonId 目标内容的JSON ID
      * @return JsonValue 返回JsonString中JsonId对应的Value
-     **/
+     */
     public static String getJsonValue(String JsonString, String JsonId) {
-        // TODO: 18/5/11 modify if many JsonId
         String JsonValue = "";
         if (JsonString == null || JsonString.trim().length() < 1) {
             return null;

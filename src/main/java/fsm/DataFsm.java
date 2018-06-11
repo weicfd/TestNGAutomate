@@ -55,7 +55,7 @@ public class DataFsm {
         return dataCode + getIndex(dataCode);
     }
 
-    public long getIndex(long dataCode) {
+    private long getIndex(long dataCode) {
 //        System.out.println("DataCode: " + dataCode );
         int res = -1;
 

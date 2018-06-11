@@ -11,6 +11,13 @@ public class Method {
     long locationCode;
 //    List<String> targets;
 
+    /**
+     *
+     * @param methodName
+     * @param mType
+     * @param dataCodeMap
+     * @param locationCode
+     */
     public Method(String methodName, int mType, Map<Long, String> dataCodeMap, long locationCode) {
         this.methodName = methodName;
         this.mType = mType;

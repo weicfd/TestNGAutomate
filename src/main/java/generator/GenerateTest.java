@@ -17,9 +17,9 @@ import static generator.Config.generate_test_dir;
 public class GenerateTest {
     private DataParser dataParser;
     private HashMap<Integer, String> dataMap;
-    private PatternParser patternParser;
-    private List<String> patterns;
-    private List<Service> services;
+//    private PatternParser patternParser;
+//    private List<String> patterns;
+//    private List<Service> services;
 
     private static int testFileID = 0;
 
@@ -132,7 +132,6 @@ public class GenerateTest {
         int[] cases = DataCodeConverter.getCases(testPath);
         for (int i = 0; i < cases.length; i++) {
             TemplateWriter writer1 = new TemplateWriter(testFileID++, testPath, service_name, cases[i], pat, oracle, dataMap, script);
-
         }
 //        TemplateWriter writer1 = new TemplateWriter(testFileID++, testPath, service_name, true, pat, dataMap);
 //        TemplateWriter writer2 = new TemplateWriter(testFileID++, testPath, service_name, false, pat, dataMap);
