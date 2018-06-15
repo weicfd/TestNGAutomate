@@ -4,6 +4,9 @@ import entity.Method;
 
 import java.util.List;
 
+/**
+ * 提供数据生成过程中需要的辅助方法
+ */
 public class DataCodeConverter {
     final static int mADD = 1, mUPDATE = 2, mDELETE = 3, mFIND = 4, mUNKNOWN = 0;
 
@@ -41,10 +44,12 @@ public class DataCodeConverter {
     }
 
     /**
+     * 哈希函数
      * suppose the max size is 3 bit
-     *
-     * @param str
-     * @return
+     * WARNING：collision may occur!
+     * todo 可能发生碰撞
+     * @param str 字符串
+     * @return 哈希后的数值
      */
     private static int hash(String str) {
         int hash = 7;

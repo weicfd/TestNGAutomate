@@ -5,6 +5,9 @@ import entity.Method;
 
 import java.util.*;
 
+/**
+ * 数据生成自动机
+ */
 public class DataFsm {
     int cursor, caseNo;
 //    final int sStart = 1, sStandard = 2, sTest = 3, sEnd = 4;

@@ -48,8 +48,10 @@ public class GenerateTest {
 
     public static void main(String[] args) {
 //        System.out.println("Step 1: initialize the dataMap, services and pattern");
-        System.out.println("Step 1: initialize the dataMap");
+        System.out.println("Step 1: initialize the dataMap and config file");
         GenerateTest generateTest = new GenerateTest();
+        ConfigWriter configWriter = new ConfigWriter("Suite1");
+        configWriter.write();
 
         System.out.println("Step 2: For each service, get script file ordered by pat");
         File services = new File(Config.script_xml_dir);
